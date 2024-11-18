@@ -1,0 +1,28 @@
+<app-status-view [legends]="legends">
+  @let zones = (zones$ | async);
+  <div class="d-flex flex-column" style="background-color: whitesmoke;">
+    <div class="d-flex align-items-center flex-column"
+      style="height:90vh;overflow-x: scroll">
+      <div class="mt-5 p-3" style="background-color: white">
+        <table style="margin: auto;padding: 5px">
+          <thead>
+          <tr>
+            <td><span>Zone Name</span></td>
+            <td><span>Call or Announcement Status</span></td>
+          </tr>
+          </thead>
+          <tbody>
+          @for (zone of zones; track zone) {
+          <tr>
+            <td style="padding: .375em .75em">{{ zone.name }}</td>
+              <td style="padding: .375em .75em">
+                <div class="status-box bg-{{zone.inUse ? 'blue' : 'green'}}"></div>
+              </td>
+            </tr>
+          }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</app-status-view>

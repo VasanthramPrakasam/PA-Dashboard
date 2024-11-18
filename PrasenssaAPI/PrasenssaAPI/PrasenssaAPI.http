@@ -1,0 +1,6 @@
+@PrasenssaAPI_HostAddress = http://localhost:5087
+
+GET {{PrasenssaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

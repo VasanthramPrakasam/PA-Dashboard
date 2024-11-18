@@ -1,0 +1,11 @@
+﻿services:
+  prasenssaapi:
+    image: prasenssaapi
+    build:
+      context: .
+      dockerfile: PrasenssaAPI/Dockerfile
+    ports:
+      - 5046:5046
+    environment:
+      - MOCK_CLIENT=${MOCK_CLIENT}
+

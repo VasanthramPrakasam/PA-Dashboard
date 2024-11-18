@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bs-body-font-size:1.5rem;
+  --bs-accordion-active-color:lightgray;
+  --bs-primary-bg-subtle:lightgray;
+  --border-radius:15px;
+  --orange-color:#e6562e;
+}
+
+body {
+  font-size: 150%;
+}
+
+.accordion {
+  --bs-accordion-btn-color: ghostwhite;
+  --bs-accordion-active-color: maroon;
+  --bs-accordion-active-bg: lightgray;
+  --bs-primary-bg-subtle:lightgray;
+  --bs-primary-text-emphasis:black;
+  --bs-accordion-btn-bg:lightgray;
+}
+
+.debug{
+  border: 4px dotted red;
+}
+
+.status-box {
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+}
+
+.bg-red {
+  background-color: #DB4437 !important;
+}
+
+.bg-lightred {
+  background-color: #DB4437;
+}
+
+.bg-lightgreen {
+  background-color: #0F9D58;
+}
+
+.bg-yellow {
+  color: yellow;
+  background-color: yellow !important;
+}
+
+.bg-blue {
+  background-color: #4285F4;
+}
+
+.bg-orange {
+  color: var(--orange-color);
+  background-color: var(--orange-color) !important;
+}
+
+.bg-green {
+  color: green;
+  background-color: #0F9D58 !important;
+}
+
+.bg-smoky{
+  background-color: whitesmoke;
+}

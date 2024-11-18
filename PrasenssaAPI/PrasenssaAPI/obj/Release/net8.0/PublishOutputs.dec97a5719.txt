@@ -1,0 +1,15 @@
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/PrasenssaAPI
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/appsettings.json
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/PrasenssaAPI.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/PrasenssaAPI.deps.json
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/PrasenssaAPI.runtimeconfig.json
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/PrasenssaAPI.pdb
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/DJMJ.Extensions.DependencyInjection.Property.Library.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/Microsoft.OpenApi.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/Ninject.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/vasanthramprakasam/RiderProjects/PrasenssaAPI/PrasenssaAPI/bin/Release/net8.0/publish/OpenInterfaceNetLibrary.dll

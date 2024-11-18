@@ -1,0 +1,94 @@
+.bg-red {
+ color: red;
+}
+
+.bg-yellow {
+  color: yellow;
+}
+
+.bg-orange {
+  color: var(--orange-color);
+}
+
+.bg-green {
+  color: green;
+}
+
+ul{
+  list-style: none;
+}
+
+span > a {
+  text-decoration: none;
+}
+
+.box {
+  position: relative;
+  margin-left: 20px;
+}
+.box:before{
+  position: absolute;
+  left: -20px;
+  content: "";
+  height:10px;
+  width:10px;
+  margin:5px;
+  border:1px solid black;
+}
+.box.red:before{
+  background-color:red;
+}
+.box.green:before{
+  background-color:green;
+}
+.box.orange:before{
+  background-color:orange;
+}
+
+
+table > tbody > tr > td {
+  border-collapse: collapse;
+  border:1px dotted;
+  border-top: none !important;
+  text-align: center;vertical-align: middle
+}
+
+.active-link{
+  background-color: #e6562e;
+  padding: .375em .75em;
+  color: white;
+  --bs-text-opacity:1;
+  padding-bottom:5px;
+}
+
+.accordion-button::after {
+  margin-left:0!important;
+  margin-right:auto;
+}
+
+.accordion-button{
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+ul > li {
+  margin: 8px;
+}
+
+.vertical_dotted_line
+{
+  border-right: 1px dotted black;
+  height: 100px;
+}
+
+table > thead > tr > td {
+  border: 1px dotted;
+  border-bottom: none !important;
+  padding: 0.575em 1.175em;
+}
+
+td > span {
+  background-color: lightgray;padding: .375em .75em;
+  border-radius: 12px;
+}
+

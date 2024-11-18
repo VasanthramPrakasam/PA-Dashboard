@@ -1,0 +1,62 @@
+.center {
+  margin: auto;
+  width: 60%;
+  /*border: 3px solid #73AD21;*/
+  padding: 100px;
+}
+
+.middle {
+  max-width: 500px;
+  margin: auto;
+}
+
+.margin-container-left {
+  margin-left: calc((100vw - 1320px)/2);
+}
+
+.margin-container-right{
+  margin-right: calc((100vw - 1320px)/2);
+}
+
+.form-control{
+  border-color: #e6562e;
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+.bg-orange {
+  background-color: #e6562e;
+  padding: .375rem .75rem;
+}
+
+form {
+  margin-top: 20px;
+}
+
+app-root{
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.pwd-field{
+  display: flex;
+}
+
+.input-group-append{
+  margin-left: -40px;
+  /*margin-top: 5px;*/
+}
+
+.login-container{
+  background-image: linear-gradient(90deg, whitesmoke 50%, white 50%);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.error {
+  color: red;
+}
+
+.btn-rounded {
+  border-radius: var(--border-radius)
+}

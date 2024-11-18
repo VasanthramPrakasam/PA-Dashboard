@@ -1,0 +1,50 @@
+<app-status-view [legends]="legends">
+  @let devices = (device$ | async) ?? [];
+  @let groups = getDeviceGroups(devices);
+  <div class="d-flex flex-column bg-smoky">
+    <a href="#" style="margin-left: auto" (click)="expandAllAccordians($event)">{{expanded ? 'Collapse All' : 'Expand all'}}</a>
+    <div class="d-flex align-items-center flex-column mb-5"
+         style="height:80vh;overflow-x: scroll">
+      @for (entry of (groups | keyvalue);let i= $index; track entry.key) {
+      @let grpDevices = getDevicesForGrp(entry.key,devices);
+      <div class="accordion" id="accordionExample-{{i}}" style="width: 100%">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button dir="rtl" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#collapseOne-'+i" aria-expanded="true" [attr.aria-controls]="'collapseOne-{{i}}'" #button
+                    id="btn-{{i}}">
+              <span class="status-box bg-{{getGroupColor(grpDevices)}}" style="margin-left: auto;font-size: larger"></span>
+              <span class="fw-bold" style="margin: auto;font-size: larger">{{entry.key}}</span>
+            </button>
+          </h2>
+          <div id="collapseOne-{{i}}" class="accordion-collapse collapse" aria-labelledby="headingOne"
+               [attr.data-bs-parent]="'#accordionExample-{{i}}'">
+            <div class="accordion-body">
+              <table style="margin: auto">
+                <thead>
+                  <tr>
+                    <td><span>Equipment Name</span></td>
+                    <td><span>Status</span></td>
+                    <td><span>Remarks</span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (device of grpDevices; track device) {
+                  <tr>
+                    <td style="padding: .375em .75em">{{ device.displayName }}</td>
+                    <td style="padding: .375em .75em">
+                      <div class="status-box bg-{{device.isConnected === 0 ? 'green' : device.isConnected === 1 ? 'red' : 'orange'}}"></div>
+                    </td>
+                    <td style="padding: .375em .75em;word-wrap: break-word">{{ device.displayFault }}</td>
+                  </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</app-status-view>

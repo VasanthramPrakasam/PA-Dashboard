@@ -1,0 +1,20 @@
+services:
+  rest-api:
+    image: dashboard.api
+    build:
+      context: ./PrasenssaAPI
+      dockerfile: ./PrasenssaAPI/Dockerfile
+    ports:
+      - 5046:5046
+    environment:
+      - MOCK_CLIENT=${MOCK_CLIENT}
+
+  angular:
+    image: dashboard.angular
+    build:
+      context: ./angular-signalr
+      dockerfile: ./Dockerfile
+      args:
+        - API_URL=${API_URL}
+    ports:
+      - 8080:80

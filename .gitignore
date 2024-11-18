@@ -1,0 +1,8 @@
+.idea
+**/node_modules/
+/angular-signalr/.angular/
+/angular-signalr/.idea/
+/angular-signalr/.vscode/
+/angular-signalr/dist/
+/angular-signalr/node_modules/
+/angular-signalr/.angular/
